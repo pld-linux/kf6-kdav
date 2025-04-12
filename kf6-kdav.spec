@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.12
+%define		kdeframever	6.13
 %define		qtver		5.15.2
 %define		kfname		kdav
 Summary:	Kdav
 Name:		kf6-%{kfname}
-Version:	6.12.0
+Version:	6.13.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	d1f0e84d3110b56dd63791448b5bc370
+# Source0-md5:	5729859a76b5feecc9a115bd6dad91b3
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
