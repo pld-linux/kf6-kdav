@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.18
+%define		kdeframever	6.19
 %define		qtver		5.15.2
 %define		kfname		kdav
 Summary:	Kdav
 Name:		kf6-%{kfname}
-Version:	6.18.0
+Version:	6.19.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	7929c680b6563087e5a3ba1b7a79fe88
+# Source0-md5:	c3644b5d610c72a079091b69917445da
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
@@ -83,7 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_datadir}/qlogging-categories6/kdav.categories
 %ghost %{_libdir}/libKF6DAV.so.6
-%attr(755,root,root) %{_libdir}/libKF6DAV.so.*.*
+%{_libdir}/libKF6DAV.so.*.*
 %{_datadir}/qlogging-categories6/kdav.renamecategories
 
 %files devel
