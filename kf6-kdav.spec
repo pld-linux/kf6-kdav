@@ -34,7 +34,10 @@ BuildRequires:	xz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A DAV protocoll implemention with KJobs.
+A DAV protocol implementation with KJobs.
+
+%description -l pl.UTF-8
+Implementacja protokołu DAV przy użyciu KJobs.
 
 %package devel
 Summary:	Header files for %{kfname} development
